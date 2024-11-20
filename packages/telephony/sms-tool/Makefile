@@ -32,8 +32,8 @@ define Package/sms-tool/description
 endef
 
 define Package/sms-tool/install
-    $(INSTALL_DIR) $(1)/usr/bin
-    $(INSTALL_BIN) $(PKG_BUILD_DIR)/sms_tool $(1)/usr/bin/
+	$(INSTALL_DIR) $(1)/usr/bin
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/sms_tool $(1)/usr/bin/
 endef
 
 $(eval $(call BuildPackage,sms-tool))
